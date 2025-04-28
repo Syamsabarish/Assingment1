@@ -107,7 +107,7 @@ def create_receiver():
 def create_claim():
     with st.form("claim_form"):
         Claim_ID = st.text_input("Claim ID")
-        Food_ID = st.text_input("Food ID")  # Added this missing input
+        Food_ID = st.text_input("Food ID")  
         Receiver_ID = st.text_input("Receiver ID")
         status = st.selectbox("Status", ["Pending", "Completed", "Canceled"])
         
